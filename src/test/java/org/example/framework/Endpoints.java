@@ -35,7 +35,4 @@ public class Endpoints {
         return restClient.doGet(URL + location + woeid + "/" + date + "/").getResponse();
     }
 
-    public void assertLocationSearchResponse() {}
-
-    public void assertLocationResponse() {}
 }
