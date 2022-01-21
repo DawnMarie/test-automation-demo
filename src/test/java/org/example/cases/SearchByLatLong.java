@@ -1,7 +1,7 @@
 package org.example.cases;
 
 import org.example.framework.Endpoints;
-import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.testah.driver.http.response.ResponseDto;
 import org.testah.framework.annotations.TestCase;
@@ -38,7 +38,7 @@ public class SearchByLatLong extends Asserts {
 
     @Test
     @TestCase
-    @Ignore("Throws a 500 error; a bug that could be logged as XXXX-1000")
+    @Disabled("Throws a 500 error; a bug that could be logged as XXXX-1000")
     public void queryALocationByStringLatLong()  {
         Endpoints endpoint = new Endpoints();
         ResponseDto response = endpoint.getLocationByLatLong("test", "190");

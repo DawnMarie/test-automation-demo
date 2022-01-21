@@ -2,7 +2,7 @@ package org.example.cases;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.example.framework.Endpoints;
-import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.testah.TS;
 import org.testah.framework.annotations.TestCase;
@@ -19,7 +19,7 @@ public class WeatherByDateWoeid extends Asserts {
 
     @Test
     @TestCase
-    @Ignore("Throws a 500 error - bug - logged as XXX-101")
+    @Disabled("Throws a 500 error - bug - logged as XXX-101")
     public void getWeatherInvalidDate()  {
         Endpoints endpoint = new Endpoints();
         JsonNode response = endpoint.getLocationDate("2423945", "2020/4/32").getResponse();
